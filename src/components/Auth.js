@@ -16,7 +16,7 @@ class Auth extends Component {
 
   componentDidMount() {
     axios
-      .get('/session')
+      .get('/auth/user')
       .then((res) => {
         this.setState({
           username: res.data.email,
